@@ -10,7 +10,7 @@ public class ExampleEntity extends Entity {
     private TextureComponent textureComponent;
     private TransformComponent transformComponent;
 
-    public ExampleEntity(TextureRegion texture) {
+    public ExampleEntity(TextureRegion texture, int x, int y) {
 
         super();
 
@@ -18,6 +18,8 @@ public class ExampleEntity extends Entity {
         transformComponent = new TransformComponent();
 
         textureComponent.texture = texture;
+        transformComponent.x = x;
+        transformComponent.y = y;
 
         add(textureComponent);
         add(transformComponent);

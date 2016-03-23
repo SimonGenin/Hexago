@@ -21,7 +21,7 @@ public class Game extends ApplicationAdapter {
 
 		Texture t = new Texture("badlogic.jpg");
 
-		ExampleEntity entity = new ExampleEntity(new TextureRegion(t));
+		ExampleEntity entity = new ExampleEntity(new TextureRegion(t), 0, 0);
 		engine.addEntity(entity);
 
 	}

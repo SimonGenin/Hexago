@@ -85,7 +85,18 @@ public class RenderingSystem extends IteratingSystem {
                 continue;
             }
 
-            batch.draw(textureComponent.texture, transformComponent.x, transformComponent.y, transformComponent.x, transformComponent.y, textureComponent.texture.getRegionWidth(), textureComponent.texture.getRegionHeight(), 1, 1, transformComponent.r);
+            batch.draw(
+                    textureComponent.texture,
+                    transformComponent.x - (textureComponent.texture.getRegionWidth() / 2),
+                    transformComponent.y - (textureComponent.texture.getRegionHeight() / 2),
+                    transformComponent.x,
+                    transformComponent.y,
+                    textureComponent.texture.getRegionWidth(),
+                    textureComponent.texture.getRegionHeight(),
+                    1,
+                    1,
+                    transformComponent.r
+            );
 
         }
 
