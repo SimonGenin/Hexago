@@ -1,0 +1,67 @@
+package be.simongenin;
+
+import be.simongenin.entities.HexagonalTileEntity;
+import be.simongenin.utils.Transform;
+import com.badlogic.ashley.core.Engine;
+
+/**
+ * Représente le monde hexagonal
+ */
+public class HexagonalWorld {
+
+    public static final int HEXA_TILE_HEIGHT = 140;
+    public static final int HEXA_TILE_WIDTH = 120;
+    public static final int WORLD_HEIGHT = 4;
+    public static final int WORLD_WIDTH = 4;
+    public static final int HEXA_POSITION_DIFFERENCE = 36;
+
+
+    private HexagonalTileEntity[][] map;
+
+    public HexagonalWorld(Engine engine) {
+        map = new HexagonalTileEntity[WORLD_HEIGHT][WORLD_WIDTH];
+        for (int i = 0; i < map.length; i++) {
+            for (int j = 0; j < map.length; j++) {
+                map[i][j] = new HexagonalTileEntity(this, i, j);
+                engine.addEntity(map[i][j]);
+            }
+        }
+    }
+
+    /**
+     * Récupere le transform en fonction d'un index dans le monde
+     *
+     * @param row
+     * @param column
+     * @return
+     */
+    public Transform getTransformFromPosition(int row, int column) {
+
+        int x = (column * HEXA_TILE_WIDTH + (HEXA_TILE_WIDTH / 2)) - (WORLD_WIDTH * HEXA_TILE_WIDTH)/2;
+        int y = (row * HEXA_TILE_HEIGHT + (HEXA_TILE_HEIGHT / 2)) - (WORLD_HEIGHT * HEXA_TILE_HEIGHT)/2;
+        y = -y;
+
+        // Bouge chaque ligne paire vers la droite pour emboiter les hexas
+        if (row % 2 == 0) {
+            x += (HEXA_TILE_WIDTH / 2);
+        }
+
+        // Remonte chaque colonne afin de les emboiter
+        if (row != 0) {
+            y += HEXA_POSITION_DIFFERENCE * row;
+        }
+
+        // Recentre les mesures apres tout ces déplacements
+        y-= WORLD_HEIGHT/2 * HEXA_POSITION_DIFFERENCE - HEXA_POSITION_DIFFERENCE/2;
+        x-= (HEXA_TILE_WIDTH / 2)/2;
+
+        Transform t = new Transform();
+        t.r = 0;
+        t.x = x;
+        t.y = y;
+
+        return t;
+
+    }
+
+}

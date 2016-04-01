@@ -1,6 +1,5 @@
 package be.simongenin;
 
-import be.simongenin.entities.HexagonalTileEntity;
 import be.simongenin.systems.RenderingSystem;
 import com.badlogic.ashley.core.Engine;
 import com.badlogic.gdx.ApplicationAdapter;
@@ -17,8 +16,7 @@ public class Game extends ApplicationAdapter {
 
 		engine.addSystem(new RenderingSystem());
 
-		HexagonalTileEntity tile = new HexagonalTileEntity();
-		engine.addEntity(tile);
+		HexagonalWorld world = new HexagonalWorld(engine);
 
 	}
 
