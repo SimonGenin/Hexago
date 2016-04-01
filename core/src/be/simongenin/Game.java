@@ -1,13 +1,11 @@
 package be.simongenin;
 
-import be.simongenin.entities.ExampleEntity;
+import be.simongenin.entities.HexagonalTileEntity;
 import be.simongenin.systems.RenderingSystem;
 import com.badlogic.ashley.core.Engine;
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
 public class Game extends ApplicationAdapter {
 
@@ -19,10 +17,8 @@ public class Game extends ApplicationAdapter {
 
 		engine.addSystem(new RenderingSystem());
 
-		Texture t = new Texture("badlogic.jpg");
-
-		ExampleEntity entity = new ExampleEntity(new TextureRegion(t), 0, 0);
-		engine.addEntity(entity);
+		HexagonalTileEntity tile = new HexagonalTileEntity();
+		engine.addEntity(tile);
 
 	}
 
