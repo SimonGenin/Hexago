@@ -4,7 +4,7 @@ import be.simongenin.HexagonalWorld;
 import be.simongenin.components.HexagonalBoardComponent;
 import be.simongenin.components.TextureComponent;
 import be.simongenin.components.TransformComponent;
-import be.simongenin.utils.Transform;
+import be.simongenin.utils.PixelTransform;
 import com.badlogic.ashley.core.Entity;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
@@ -29,10 +29,9 @@ public class HexagonalTileEntity extends Entity {
         Texture texture = new Texture("test.png");
         textureComponent.texture = new TextureRegion(texture, hexagonalBoardComponent.width, hexagonalBoardComponent.height);
 
-        // TODO position management
-        Transform transform = world.getTransformFromPosition(row, column);
-        transformComponent.x = transform.x;
-        transformComponent.y = transform.y;
+        PixelTransform pixelTransform = world.getTransformFromPosition(row, column);
+        transformComponent.x = pixelTransform.x;
+        transformComponent.y = pixelTransform.y;
         transformComponent.r = 0;
 
         add(textureComponent);

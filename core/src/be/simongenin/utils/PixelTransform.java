@@ -1,7 +1,9 @@
 package be.simongenin.utils;
 
-
-public class Transform {
+/**
+ * Représente une position en pixel.
+ */
+public class PixelTransform {
 
     public float x = 0;
     public float y = 0;

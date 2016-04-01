@@ -1,7 +1,7 @@
 package be.simongenin;
 
 import be.simongenin.entities.HexagonalTileEntity;
-import be.simongenin.utils.Transform;
+import be.simongenin.utils.PixelTransform;
 import com.badlogic.ashley.core.Engine;
 
 /**
@@ -11,8 +11,11 @@ public class HexagonalWorld {
 
     public static final int HEXA_TILE_HEIGHT = 140;
     public static final int HEXA_TILE_WIDTH = 120;
+
     public static final int WORLD_HEIGHT = 4;
     public static final int WORLD_WIDTH = 4;
+
+    // Mesure pour emboiter verticalement les hexagones
     public static final int HEXA_POSITION_DIFFERENCE = 36;
 
 
@@ -29,13 +32,13 @@ public class HexagonalWorld {
     }
 
     /**
-     * Récupere le transform en fonction d'un index dans le monde
+     * Récupere le transform en fonction d'un index dans le monde.
      *
      * @param row
      * @param column
      * @return
      */
-    public Transform getTransformFromPosition(int row, int column) {
+    public PixelTransform getTransformFromPosition(int row, int column) {
 
         int x = (column * HEXA_TILE_WIDTH + (HEXA_TILE_WIDTH / 2)) - (WORLD_WIDTH * HEXA_TILE_WIDTH)/2;
         int y = (row * HEXA_TILE_HEIGHT + (HEXA_TILE_HEIGHT / 2)) - (WORLD_HEIGHT * HEXA_TILE_HEIGHT)/2;
@@ -55,7 +58,7 @@ public class HexagonalWorld {
         y-= WORLD_HEIGHT/2 * HEXA_POSITION_DIFFERENCE - HEXA_POSITION_DIFFERENCE/2;
         x-= (HEXA_TILE_WIDTH / 2)/2;
 
-        Transform t = new Transform();
+        PixelTransform t = new PixelTransform();
         t.r = 0;
         t.x = x;
         t.y = y;
