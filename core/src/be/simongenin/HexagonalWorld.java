@@ -13,7 +13,7 @@ public class HexagonalWorld {
     public static final int HEXA_TILE_WIDTH = 120;
 
     public static final int WORLD_HEIGHT = 4;
-    public static final int WORLD_WIDTH = 4;
+    public static final int WORLD_WIDTH = 10;
 
     // Mesure pour emboiter verticalement les hexagones
     public static final int HEXA_POSITION_DIFFERENCE = 36;
@@ -23,8 +23,17 @@ public class HexagonalWorld {
 
     public HexagonalWorld(Engine engine) {
         map = new HexagonalTileEntity[WORLD_HEIGHT][WORLD_WIDTH];
-        for (int i = 0; i < map.length; i++) {
-            for (int j = 0; j < map.length; j++) {
+        generateBasicTestWorld(engine);
+    }
+
+    /**
+     * Methode de test afin de générer un monde basic
+     *
+     * @param engine
+     */
+    private void generateBasicTestWorld(Engine engine) {
+        for (int i = 0; i < WORLD_HEIGHT; i++) {
+            for (int j = 0; j < WORLD_WIDTH; j++) {
                 map[i][j] = new HexagonalTileEntity(this, i, j);
                 engine.addEntity(map[i][j]);
             }
