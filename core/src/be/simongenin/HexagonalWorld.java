@@ -1,6 +1,7 @@
 package be.simongenin;
 
 import be.simongenin.entities.HexagonalTileEntity;
+import be.simongenin.entities.TileItemEntity;
 import be.simongenin.utils.PixelTransform;
 import com.badlogic.ashley.core.Engine;
 
@@ -33,7 +34,13 @@ public class HexagonalWorld {
     private void generateBasicTestWorld(Engine engine) {
         for (int i = 0; i < WORLD_HEIGHT; i++) {
             for (int j = 0; j < WORLD_WIDTH; j++) {
-                map[i][j] = new HexagonalTileEntity(this, i, j);
+                if (i % 2 == 0) {
+                    map[i][j] = new HexagonalTileEntity(this, i, j);
+                } else {
+                    TileItemEntity itemEntity = new TileItemEntity();
+                    engine.addEntity(itemEntity);
+                    map[i][j] = new HexagonalTileEntity(this, i, j, itemEntity);
+                }
                 engine.addEntity(map[i][j]);
             }
         }
