@@ -12,8 +12,8 @@ public class HexagonalWorld {
     public static final int HEXA_TILE_HEIGHT = 140;
     public static final int HEXA_TILE_WIDTH = 120;
 
-    public static final int WORLD_HEIGHT = 4;
-    public static final int WORLD_WIDTH = 10;
+    public static final int WORLD_HEIGHT = 6;
+    public static final int WORLD_WIDTH = 6;
 
     // Mesure pour emboiter verticalement les hexagones
     public static final int HEXA_POSITION_DIFFERENCE = 36;

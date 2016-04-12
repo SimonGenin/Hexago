@@ -1,5 +1,6 @@
 package be.simongenin.textures;
 
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
 /*
@@ -8,9 +9,15 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
  */
 public class TextureLoader {
 
-    public static TextureRegion loadTexture(String name) {
-        // TODO write loadTexture
-        return null;
+    public static TextureRegion loadTileTexture(String textureName) {
+
+        TextureAtlas atlas = null;
+        TextureAtlas.AtlasRegion region = null;
+
+        atlas = TextureAtlases.tileAtlas;
+        region = atlas.findRegion(textureName);
+
+        return region;
     }
 
 }
