@@ -8,6 +8,6 @@ public class TextureAtlases {
     private static String TEXTURES_PATH = "textures/";
 
     public static TextureAtlas tileAtlas = new TextureAtlas(new FileHandle(TEXTURES_PATH + "tiles.pack"));
-    // public static TextureAtlas itemAtlas = new TextureAtlas(new FileHandle(TEXTURES_PATH + "items.pack"));
+    public static TextureAtlas itemAtlas = new TextureAtlas(new FileHandle(TEXTURES_PATH + "items.pack"));
 
 }

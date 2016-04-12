@@ -1,0 +1,579 @@
+items.png
+size: 254, 988
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+anvil
+  rotate: false
+  xy: 211, 688
+  size: 20, 23
+  orig: 20, 23
+  offset: 0, 0
+  index: -1
+archway
+  rotate: false
+  xy: 79, 452
+  size: 70, 84
+  orig: 70, 84
+  offset: 0, 0
+  index: -1
+banner
+  rotate: false
+  xy: 203, 535
+  size: 18, 38
+  orig: 18, 38
+  offset: 0, 0
+  index: -1
+beigeBuilding
+  rotate: true
+  xy: 193, 934
+  size: 52, 60
+  orig: 52, 60
+  offset: 0, 0
+  index: -1
+beigeBuilding_side
+  rotate: false
+  xy: 159, 631
+  size: 34, 40
+  orig: 34, 40
+  offset: 0, 0
+  index: -1
+cactus1
+  rotate: true
+  xy: 219, 389
+  size: 22, 34
+  orig: 22, 34
+  offset: 0, 0
+  index: -1
+cactus2
+  rotate: false
+  xy: 203, 575
+  size: 18, 33
+  orig: 18, 33
+  offset: 0, 0
+  index: -1
+cactus3
+  rotate: true
+  xy: 211, 713
+  size: 16, 20
+  orig: 16, 20
+  offset: 0, 0
+  index: -1
+castle_large
+  rotate: false
+  xy: 1, 1
+  size: 100, 119
+  orig: 100, 119
+  offset: 0, 0
+  index: -1
+castle_open
+  rotate: false
+  xy: 103, 1
+  size: 100, 112
+  orig: 100, 112
+  offset: 0, 0
+  index: -1
+castle_small
+  rotate: true
+  xy: 1, 242
+  size: 106, 94
+  orig: 106, 94
+  offset: 0, 0
+  index: -1
+church
+  rotate: false
+  xy: 81, 538
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+crane
+  rotate: true
+  xy: 199, 245
+  size: 42, 54
+  orig: 42, 54
+  offset: 0, 0
+  index: -1
+crystals1
+  rotate: false
+  xy: 95, 414
+  size: 38, 36
+  orig: 38, 36
+  offset: 0, 0
+  index: -1
+crystals2
+  rotate: true
+  xy: 151, 499
+  size: 34, 42
+  orig: 34, 42
+  offset: 0, 0
+  index: -1
+farm
+  rotate: false
+  xy: 97, 244
+  size: 50, 56
+  orig: 50, 56
+  offset: 0, 0
+  index: -1
+farmland
+  rotate: true
+  xy: 151, 115
+  size: 56, 49
+  orig: 56, 49
+  offset: 0, 0
+  index: -1
+farmland_empty
+  rotate: true
+  xy: 95, 352
+  size: 60, 44
+  orig: 60, 44
+  offset: 0, 0
+  index: -1
+fence
+  rotate: true
+  xy: 219, 413
+  size: 22, 32
+  orig: 22, 32
+  offset: 0, 0
+  index: -1
+fire
+  rotate: false
+  xy: 203, 610
+  size: 18, 24
+  orig: 18, 24
+  offset: 0, 0
+  index: -1
+fountain
+  rotate: false
+  xy: 151, 451
+  size: 46, 46
+  orig: 46, 46
+  offset: 0, 0
+  index: -1
+hay
+  rotate: true
+  xy: 187, 403
+  size: 32, 30
+  orig: 32, 30
+  offset: 0, 0
+  index: -1
+hedge
+  rotate: true
+  xy: 1, 122
+  size: 118, 98
+  orig: 118, 98
+  offset: 0, 0
+  index: -1
+horseTrough
+  rotate: false
+  xy: 199, 437
+  size: 40, 28
+  orig: 40, 28
+  offset: 0, 0
+  index: -1
+indianTent_back
+  rotate: false
+  xy: 159, 535
+  size: 42, 46
+  orig: 42, 46
+  offset: 0, 0
+  index: -1
+indianTent_front
+  rotate: false
+  xy: 159, 583
+  size: 42, 46
+  orig: 42, 46
+  offset: 0, 0
+  index: -1
+log
+  rotate: false
+  xy: 223, 665
+  size: 28, 21
+  orig: 28, 21
+  offset: 0, 0
+  index: -1
+logPile
+  rotate: false
+  xy: 199, 467
+  size: 36, 32
+  orig: 36, 32
+  offset: 0, 0
+  index: -1
+medieval_doorway
+  rotate: false
+  xy: 205, 89
+  size: 48, 56
+  orig: 48, 56
+  offset: 0, 0
+  index: -1
+mill_brick
+  rotate: false
+  xy: 1, 752
+  size: 80, 81
+  orig: 80, 81
+  offset: 0, 0
+  index: -1
+mill_hightop
+  rotate: false
+  xy: 77, 684
+  size: 60, 66
+  orig: 60, 66
+  offset: 0, 0
+  index: -1
+mill_house
+  rotate: false
+  xy: 101, 122
+  size: 48, 56
+  orig: 48, 56
+  offset: 0, 0
+  index: -1
+mill_lodge
+  rotate: false
+  xy: 91, 906
+  size: 46, 70
+  orig: 46, 70
+  offset: 0, 0
+  index: -1
+mill_overhang
+  rotate: true
+  xy: 189, 822
+  size: 54, 64
+  orig: 54, 64
+  offset: 0, 0
+  index: -1
+mill_redBrick
+  rotate: false
+  xy: 1, 835
+  size: 80, 81
+  orig: 80, 81
+  offset: 0, 0
+  index: -1
+mill_way
+  rotate: true
+  xy: 97, 302
+  size: 48, 56
+  orig: 48, 56
+  offset: 0, 0
+  index: -1
+mine
+  rotate: false
+  xy: 141, 357
+  size: 44, 55
+  orig: 44, 55
+  offset: 0, 0
+  index: -1
+oldBuilding
+  rotate: true
+  xy: 1, 560
+  size: 96, 78
+  orig: 96, 78
+  offset: 0, 0
+  index: -1
+outhouse
+  rotate: true
+  xy: 223, 619
+  size: 22, 30
+  orig: 22, 30
+  offset: 0, 0
+  index: -1
+oven
+  rotate: false
+  xy: 155, 302
+  size: 42, 53
+  orig: 42, 53
+  offset: 0, 0
+  index: -1
+oven_outlet
+  rotate: true
+  xy: 199, 333
+  size: 20, 48
+  orig: 20, 48
+  offset: 0, 0
+  index: -1
+pallet
+  rotate: false
+  xy: 183, 678
+  size: 26, 24
+  orig: 26, 24
+  offset: 0, 0
+  index: -1
+pallet_full
+  rotate: true
+  xy: 223, 563
+  size: 26, 30
+  orig: 26, 30
+  offset: 0, 0
+  index: -1
+rockBrown_large
+  rotate: false
+  xy: 187, 357
+  size: 30, 44
+  orig: 30, 44
+  offset: 0, 0
+  index: -1
+rockBrown_small
+  rotate: false
+  xy: 233, 688
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+rockGrey_large
+  rotate: false
+  xy: 1, 658
+  size: 74, 92
+  orig: 74, 92
+  offset: 0, 0
+  index: -1
+rockGrey_medium1
+  rotate: true
+  xy: 202, 147
+  size: 40, 51
+  orig: 40, 51
+  offset: 0, 0
+  index: -1
+rockGrey_medium2
+  rotate: false
+  xy: 159, 173
+  size: 40, 61
+  orig: 40, 61
+  offset: 0, 0
+  index: -1
+rockGrey_medium3
+  rotate: false
+  xy: 139, 896
+  size: 52, 62
+  orig: 52, 62
+  offset: 0, 0
+  index: -1
+rockGrey_medium4
+  rotate: true
+  xy: 193, 878
+  size: 54, 60
+  orig: 54, 60
+  offset: 0, 0
+  index: -1
+rockGrey_small1
+  rotate: true
+  xy: 195, 501
+  size: 32, 26
+  orig: 32, 26
+  offset: 0, 0
+  index: -1
+rockGrey_small2
+  rotate: false
+  xy: 223, 501
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+rockGrey_small3
+  rotate: false
+  xy: 233, 708
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+rockGrey_small4
+  rotate: false
+  xy: 183, 704
+  size: 26, 22
+  orig: 26, 22
+  offset: 0, 0
+  index: -1
+rockGrey_small5
+  rotate: true
+  xy: 219, 355
+  size: 32, 34
+  orig: 32, 34
+  offset: 0, 0
+  index: -1
+rockGrey_small6
+  rotate: true
+  xy: 223, 533
+  size: 28, 30
+  orig: 28, 30
+  offset: 0, 0
+  index: -1
+rockGrey_small7
+  rotate: true
+  xy: 223, 591
+  size: 26, 30
+  orig: 26, 30
+  offset: 0, 0
+  index: -1
+ruinsCorner
+  rotate: false
+  xy: 201, 189
+  size: 50, 54
+  orig: 50, 54
+  offset: 0, 0
+  index: -1
+ruins_brick1
+  rotate: true
+  xy: 183, 728
+  size: 22, 20
+  orig: 22, 20
+  offset: 0, 0
+  index: -1
+ruins_brick2
+  rotate: true
+  xy: 233, 728
+  size: 16, 20
+  orig: 16, 20
+  offset: 0, 0
+  index: -1
+saloon
+  rotate: true
+  xy: 1, 918
+  size: 67, 88
+  orig: 67, 88
+  offset: 0, 0
+  index: -1
+sheriff
+  rotate: true
+  xy: 1, 350
+  size: 100, 92
+  orig: 100, 92
+  offset: 0, 0
+  index: -1
+shop
+  rotate: true
+  xy: 81, 616
+  size: 66, 76
+  orig: 66, 76
+  offset: 0, 0
+  index: -1
+shops
+  rotate: false
+  xy: 101, 180
+  size: 56, 62
+  orig: 56, 62
+  offset: 0, 0
+  index: -1
+station
+  rotate: true
+  xy: 1, 452
+  size: 106, 76
+  orig: 106, 76
+  offset: 0, 0
+  index: -1
+store
+  rotate: true
+  xy: 83, 752
+  size: 74, 73
+  orig: 74, 73
+  offset: 0, 0
+  index: -1
+target
+  rotate: false
+  xy: 202, 772
+  size: 12, 15
+  orig: 12, 15
+  offset: 0, 0
+  index: -1
+tombstone1
+  rotate: false
+  xy: 241, 437
+  size: 12, 18
+  orig: 12, 18
+  offset: 0, 0
+  index: -1
+tombstone2
+  rotate: false
+  xy: 205, 731
+  size: 16, 17
+  orig: 16, 17
+  offset: 0, 0
+  index: -1
+tombstone3
+  rotate: false
+  xy: 202, 752
+  size: 12, 18
+  orig: 12, 18
+  offset: 0, 0
+  index: -1
+tower
+  rotate: false
+  xy: 205, 1
+  size: 48, 86
+  orig: 48, 86
+  offset: 0, 0
+  index: -1
+towerRuin
+  rotate: true
+  xy: 199, 289
+  size: 42, 54
+  orig: 42, 54
+  offset: 0, 0
+  index: -1
+treePine_large
+  rotate: false
+  xy: 195, 636
+  size: 26, 40
+  orig: 26, 40
+  offset: 0, 0
+  index: -1
+treePine_small
+  rotate: true
+  xy: 223, 643
+  size: 20, 30
+  orig: 20, 30
+  offset: 0, 0
+  index: -1
+treeRound_large
+  rotate: true
+  xy: 139, 960
+  size: 20, 46
+  orig: 20, 46
+  offset: 0, 0
+  index: -1
+treeRound_small
+  rotate: false
+  xy: 237, 467
+  size: 14, 32
+  orig: 14, 32
+  offset: 0, 0
+  index: -1
+wall_corner
+  rotate: true
+  xy: 83, 828
+  size: 76, 50
+  orig: 76, 50
+  offset: 0, 0
+  index: -1
+wall_red
+  rotate: false
+  xy: 135, 414
+  size: 50, 35
+  orig: 50, 35
+  offset: 0, 0
+  index: -1
+watertower
+  rotate: false
+  xy: 158, 752
+  size: 42, 68
+  orig: 42, 68
+  offset: 0, 0
+  index: -1
+windmill
+  rotate: false
+  xy: 149, 244
+  size: 48, 56
+  orig: 48, 56
+  offset: 0, 0
+  index: -1
+windmill_base
+  rotate: false
+  xy: 139, 684
+  size: 42, 66
+  orig: 42, 66
+  offset: 0, 0
+  index: -1
+windmill_complete
+  rotate: false
+  xy: 135, 828
+  size: 52, 66
+  orig: 52, 66
+  offset: 0, 0
+  index: -1

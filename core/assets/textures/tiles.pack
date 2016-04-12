@@ -1,0 +1,33 @@
+tiles.png
+size: 122, 568
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dirt
+  rotate: false
+  xy: 1, 1
+  size: 120, 140
+  orig: 120, 140
+  offset: 0, 0
+  index: 6
+grass
+  rotate: false
+  xy: 1, 143
+  size: 120, 140
+  orig: 120, 140
+  offset: 0, 0
+  index: 5
+sand
+  rotate: false
+  xy: 1, 285
+  size: 120, 140
+  orig: 120, 140
+  offset: 0, 0
+  index: 7
+stone
+  rotate: false
+  xy: 1, 427
+  size: 120, 140
+  orig: 120, 140
+  offset: 0, 0
+  index: 7
