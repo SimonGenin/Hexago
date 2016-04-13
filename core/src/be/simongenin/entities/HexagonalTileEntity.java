@@ -2,6 +2,7 @@ package be.simongenin.entities;
 
 import be.simongenin.HexagonalWorld;
 import be.simongenin.components.HexagonalBoardComponent;
+import be.simongenin.components.ResourceComponent;
 import be.simongenin.components.TextureComponent;
 import be.simongenin.components.TransformComponent;
 import be.simongenin.enums.TexturePriority;
@@ -30,8 +31,24 @@ public class HexagonalTileEntity extends Entity {
         transformComponent = new TransformComponent();
         hexagonalBoardComponent = new HexagonalBoardComponent();
 
-        textureComponent.texture = TextureLoader.loadTileTexture("grass");
         textureComponent.priority = TexturePriority.TILE_BACKGROUND;
+
+        // Applique la bonne texture
+        switch (hexagonalBoardComponent.environment) {
+
+            case GRASS:
+                textureComponent.texture = TextureLoader.loadTileTexture("grass");
+                break;
+            case ROCK:
+                textureComponent.texture = TextureLoader.loadTileTexture("rock");
+                break;
+            case SAND:
+                textureComponent.texture = TextureLoader.loadTileTexture("sand");
+                break;
+            case DIRT:
+                textureComponent.texture = TextureLoader.loadTileTexture("dirt");
+                break;
+        }
 
         PixelTransform pixelTransform = world.getTransformFromPosition(row, column);
         transformComponent.x = pixelTransform.x;
@@ -41,6 +58,17 @@ public class HexagonalTileEntity extends Entity {
         add(textureComponent);
         add(transformComponent);
         add(hexagonalBoardComponent);
+
+    }
+
+    public void addResourceComponent() {
+
+        // TODO handle the different environnements with a switch
+        textureComponent.texture = TextureLoader.loadTextureFromAssets("resources.png");
+
+        ResourceComponent resourceComponent = new ResourceComponent();
+        // resourceComponent.level = 1;
+        add(resourceComponent);
 
     }
 

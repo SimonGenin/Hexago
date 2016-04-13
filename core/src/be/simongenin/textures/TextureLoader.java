@@ -1,6 +1,7 @@
 package be.simongenin.textures;
 
 import be.simongenin.exceptions.TextureNotFoundException;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
@@ -13,8 +14,8 @@ public class TextureLoader {
     /**
      * Permet de charger la texture d'une tile
      *
-     * @param textureName
-     * @return
+     * @param textureName Nom de la texture
+     * @return la texture (sous forme de textureRegion)
      */
     public static TextureRegion loadTileTexture(String textureName) {
 
@@ -29,6 +30,10 @@ public class TextureLoader {
         }
 
         return region;
+    }
+
+    public static TextureRegion loadTextureFromAssets(String texturePath) {
+        return new TextureRegion(new Texture("textures/" + texturePath));
     }
 
 

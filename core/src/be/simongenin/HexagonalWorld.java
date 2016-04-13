@@ -18,7 +18,7 @@ public class HexagonalWorld {
     // Mesure pour emboiter verticalement les hexagones
     public static final int HEXA_POSITION_DIFFERENCE = 36;
 
-    private HexagonalTileEntity[][] map;
+    public HexagonalTileEntity[][] map;
 
     public HexagonalWorld(Engine engine) {
         map = new HexagonalTileEntity[WORLD_HEIGHT][WORLD_WIDTH];
@@ -37,6 +37,9 @@ public class HexagonalWorld {
                 engine.addEntity(map[i][j]);
             }
         }
+
+        map[3][3].addResourceComponent();
+
     }
 
     /**
@@ -74,5 +77,6 @@ public class HexagonalWorld {
         return t;
 
     }
+
 
 }
