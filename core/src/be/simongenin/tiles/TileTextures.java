@@ -8,9 +8,16 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
  */
 public class TileTextures {
 
+    /*
+        BASIC
+     */
     public static TextureRegion TILE_TEXTURE_GRASS = TextureLoader.loadTileTexture("grass");
     public static TextureRegion TILE_TEXTURE_STONE = TextureLoader.loadTileTexture("stone");
     public static TextureRegion TILE_TEXTURE_DIRT = TextureLoader.loadTileTexture("dirt");
     public static TextureRegion TILE_TEXTURE_SAND = TextureLoader.loadTileTexture("sand");
+
+    /*
+
+     */
 
 }
